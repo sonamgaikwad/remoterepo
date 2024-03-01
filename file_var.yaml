@@ -1,0 +1,9 @@
+---
+- name: this playbook is for file variable
+  hosts: all
+  vars_files: office.yml
+  tasks:
+   - name: first task example for file variable
+     debug:
+      msg: "{{URL}}"
+...      
