@@ -1,0 +1,10 @@
+---
+- name: this is local playbook
+  hosts: all
+  tasks:
+    - name: this message is from local variable
+      debug:
+       msg: "{{URL}}"
+      vars:
+       URL: "devops engineer"
+...       
