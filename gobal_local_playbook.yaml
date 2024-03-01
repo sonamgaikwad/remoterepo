@@ -1,6 +1,6 @@
 --- 
 - name: this is mixture of local and global variable
-  hosts:
+  hosts: all
   vars:
     URL: "this message from global variable"
   tasks:
@@ -11,7 +11,7 @@
    - name: second global file
      debug:
       msg: "{{URL}}"
-      
+
    - name: first local file
      debug:
        msg: "{{STRING}}"
