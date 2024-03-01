@@ -2,10 +2,10 @@
 - name: prompt variable
   hosts: all
   vars_prompt:
-    - name:
+    - name: user_input
       prompt: "password"
   tasks:
-    - name: fisrt prompt file
+    - name: first prompt file
       debug:
-        msg: "{{URL}}"
+        msg: "{{user_input}}"
 ...            
