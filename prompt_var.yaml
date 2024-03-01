@@ -1,0 +1,11 @@
+---
+- name: prompt variable
+  hosts: all
+  vars_prompt:
+    - name:
+      prompt: "password"
+  tasks:
+    - name: fisrt prompt file
+      debug:
+        msg: "{{URL}}"
+...            
