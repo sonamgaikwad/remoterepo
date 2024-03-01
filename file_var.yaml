@@ -1,7 +1,7 @@
 ---
 - name: this playbook is for file variable
   hosts: all
-  vars_files: office.yml
+  vars_files: office.yaml
   tasks:
    - name: first task example for file variable
      debug:
