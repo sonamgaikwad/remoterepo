@@ -1,0 +1,10 @@
+---
+- name: this file for global variable
+  hosts: all
+  vars:
+    URL: "this message from global variable"
+  tasks:
+    - name: this is first trail
+      debug:
+        msg: "{{URL}}"
+...        
