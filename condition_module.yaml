@@ -1,0 +1,13 @@
+---
+- name:
+  hosts: all
+  become: yes
+  tasks:
+    - name: install apache in debian
+      command: apt install httpd -y
+      when: ansible_os_family=="debian"
+
+    - name: install httpd in redhat
+      command: yum install httpd -y
+      when: ansible_os_family=="redhat"
+...       
