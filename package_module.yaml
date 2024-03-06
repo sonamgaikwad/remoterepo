@@ -5,8 +5,8 @@
   vars:
     package: httpd
   tasks:
-    name: installing package
-    action: yum
-    name: "{{package}}"
-    state: latest
+    - name: installing package
+      yum:
+      name: "{{package}}"
+      state: latest
 ...      
