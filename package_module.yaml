@@ -1,0 +1,12 @@
+---
+- name: package module playbook
+  hosts: all
+  become: yes
+  vars:
+    package: httpd
+  tasks:
+    - name: installing package
+      action: yum
+      name: "{{package}}"
+      state: latest
+...      
