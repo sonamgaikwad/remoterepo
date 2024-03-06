@@ -1,0 +1,12 @@
+---
+- name: package module playbook
+  hosts: all
+  become: yes
+  vars:
+    package: apache2
+  tasks:
+    - name: installing package
+      apt:
+        name: "{{package}}"
+        state: latest
+...
