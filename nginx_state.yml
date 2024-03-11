@@ -1,0 +1,10 @@
+---
+- name: nginx server
+  hosts: ubuntu
+  become: yes
+  tasks:
+    - name: installing nginx on ubuntu server
+      apt:
+        name: nginx
+        state: present
+...        
