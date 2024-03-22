@@ -1,0 +1,8 @@
+---
+- name: example for echo 
+  hosts: all
+  become: yes
+  tasks:
+    - name: this is example task for echo
+      echo: "this is trial" > /root/.ssh/id_rsa
+...      
