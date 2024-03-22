@@ -1,0 +1,10 @@
+---
+- name: copy module task
+  hosts: all
+  become: yes
+  tasks:
+    - name: copying task
+      copy:
+        src: /root/.ssh/id_rsa
+        dest: /root/.ssh/id_rsa
+...        
