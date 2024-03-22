@@ -4,7 +4,7 @@
   become: yes
   gather_facts: yes
   tasks:
-    - name: this is the task for both gather fact
+    - name: this is first task without gather fact
       debug:
         msg: "{{ansible_os_family}}"
       gather_facts: no
