@@ -1,0 +1,10 @@
+---
+- name: tree package installation
+  hosts: all
+  become: yes
+  tasks:
+    - name: tree package installation on redhat family
+      yum:
+        name: tree
+        state: present
+...        
