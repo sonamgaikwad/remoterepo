@@ -1,0 +1,14 @@
+---
+- name: this is ignore error case
+  hosts: all
+  become: yes
+  tasks:
+    - name: this is new error case file
+      debug: 
+        msg: daemon
+      ignore_errors: yes
+
+    - name: 
+      debug:
+        msg: "this is ignore error playbook"
+...            
