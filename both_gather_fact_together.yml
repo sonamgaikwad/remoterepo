@@ -1,0 +1,11 @@
+---
+- name: both gather facts is single file
+  hosts: all
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: this is the task for both gather fact
+      debug:
+        msg: "{{ansible_os_family}}"
+      gather_facts: no
+...        
